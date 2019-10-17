@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+let Rectangle = function (length,width) {
+    this.length = length;
+    this.getLength = function () {
+        return this.length;
+    };
+    this.width = width;
+    this.getWidth = function () {
+        return this.width;
+    };
+
+       this.getArea= function () {
+             return length*width;
+       };
+       this.getCircuit=function () {
+           return (length+width)*2
+       }
+};
+       let rectangle= new Rectangle(20,10);
+       let length = rectangle.getLength();
+       let width = rectangle.getWidth();
+       let area =rectangle.getArea();
+       let circuit=rectangle.getCircuit();
+alert('length='+length+';width='+width+';area='+ area + ';circuit='+circuit);
+</script>
+</body>
+</html>
